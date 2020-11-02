@@ -1,0 +1,34 @@
+<additional>
+
+
+<vType id="ego" lcLookaheadLeft="2" lcOpposite="4" speedFactor="1.1"/>
+<vType id="dietro" speedFactor="1.1"/>
+<vType id="camion"  speedFactor="0.9" lcCooperative="100000000"/>
+<vType id="bus"  speedFactor="0.9" lcCooperative="100000000"/>
+<vType id="city"  speedFactor="0.9" lcCooperative="100000000"/>
+<vType id="flex"  speedFactor="0.9" lcCooperative="100000000"/>
+<vType id="semi"  speedFactor="0.9" lcCooperative="100000000"/>
+<vType id="overland"  speedFactor="0.9" lcCooperative="100000000"/>
+
+<vType id="lev5" accel="1.5000" decel="6.0000" tau="0.5000" minGap="1.501" lcStrategic="10" lcCooperative="100000000" lcSpeedGain="5" lcSpeedGainRight="1" lcKeepRight="1" lcAssertive="1" speedFactor="1.1" lcOpposite="1" lcLookAheadLeft="300" />
+	<route id="route0" color="1,1,0" edges="96617215 492741831 492741830"/>
+	<route id="route2" color="1,1,0" edges="-492741831 -96617215"/>
+	<route id="route1" color="1,1,0" edges="-96617215"/>
+    <routeDistribution id="ciao">
+        <route refId="route0" probability="1"/>
+        
+    </routeDistribution>
+	<vehicle id="ciao.0" depart="55.00" departLane="0" departPos="5.00" departSpeed="25" route="route0" color="green"/>
+    <vehicle id="ciao.1" depart="60.00" departLane="0" departPos="5.00" departSpeed="max" color="green" route="route0" type="camion"/>
+	<vehicle id="ciao.2" depart="65.00" departLane="0" departPos="5.00" type="ego" departSpeed="max" route="route0" color="red"/>
+    
+	 <vehicle id="ciao.3" depart="0.00" departLane="0" departPos="5" departSpeed="max" route="route1" type="semi" color="white"/> 
+    <vehicle id="ciao.4" depart="1.00" departLane="0" departPos="5" departSpeed="max" route="route1" color="yellow" type="bus"/>
+    <vehicle id="ciao.5" depart="2.00" departLane="0" departPos="last" departSpeed="max" route="route1" type="city"/>
+    <vehicle id="ciao.6" depart="10.00" departLane="0" departPos="free" departSpeed="max" route="route1" type="overland" color="blue"/>
+    <vehicle id="ciao.7" depart="11.00" departLane="0" departPos="free" departSpeed="max" route="route1" type="flex"/>
+    <vehicle id="ciao.8" depart="12.00" departLane="0" departPos="free" departSpeed="max" route="route1" color="blue"/>
+	<vehicle id="ciao.9" depart="13.00" departLane="0" departPos="free" departSpeed="max" route="route1" color="blue"/>
+	<vehicle id="ciao.10" depart="14.00" departLane="0" departPos="5.00" departSpeed="max" route="route1" color="blue"/>
+
+</additional>

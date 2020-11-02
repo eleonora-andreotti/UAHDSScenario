@@ -1,0 +1,24 @@
+<configuration>
+    <input>
+        <net-file value="UAHDSScenario.net.xml"/>
+        <route-files value="UAHDSScenario.rou.xml"/>
+        <additional-files value="UAHDSScenario.add.xml"/>
+    </input>
+	
+	<collision.stoptime value="1"/>
+	<collision.action value="remove"/>
+
+	
+	
+    <time>
+        <begin value="0"/>
+        <end value="100"/>
+    </time>
+	
+	
+	<output>
+	<lanechange-output value="UAHDSScenario.lanechange.xml"/>
+    <tripinfo-output value="UAHDSScenario.trip_info.xml"/>
+    <summary value="UAHDSScenario.summary.xml"/>
+</output>
+</configuration>
